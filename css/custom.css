@@ -1,0 +1,66 @@
+/* Add this CSS to adjust the modal's position */
+.simple-lightbox {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.9);
+  }
+  
+  /* Adjust the caption position */
+  .slbCaption {
+    position: absolute;
+    bottom: 10px;
+    left: 0;
+    right: 0;
+    text-align: center;
+    color: #fff;
+    background: rgba(0, 0, 0, 0.7);
+    padding: 10px;
+  }
+  
+  /* Add media query to handle smaller screens */
+  @media (max-width: 768px) {
+    .simple-lightbox {
+      align-items: flex-start;
+    }
+  }
+  
+/* Move the close button to the upper right corner */
+.slbCloseBtn {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: rgba(0, 0, 0, 0.7);
+    padding: 10px;
+    border-radius: 50%;
+  }
+  
+  /* Adjust the position of next and previous buttons */
+  .slbNextBtn, .slbPrevBtn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: rgba(0, 0, 0, 0.7);
+    padding: 10px;
+  }
+  
+  .slbNextBtn {
+    right: 10px; /* Place the next button on the right side */
+  }
+  
+  .slbPrevBtn {
+    left: unset; /* Remove the left positioning */
+    right: 10px; /* Place the previous button on the right side */
+  }
+  
+  /* Style button icons (optional) */
+  .slbCloseBtn:before, .slbNextBtn:before, .slbPrevBtn:before {
+    font-size: 20px; /* Adjust the size of the icons */
+    color: #fff; /* Change the icon color */
+  }
+  
+  
+  
+  
